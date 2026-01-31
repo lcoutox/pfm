@@ -1,0 +1,53 @@
+.pfm-button {
+  padding: 0.5rem 1rem;
+  border-radius: var(--pfm-radius);
+  border: 1px solid transparent;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.pfm-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pfm-button--primary {
+  background-color: var(--pfm-accent);
+  color: var(--pfm-bg-primary);
+  border-color: var(--pfm-accent);
+}
+
+.pfm-button--primary:hover:not(:disabled) {
+  background-color: var(--pfm-accent-hover);
+  border-color: var(--pfm-accent-hover);
+}
+
+.pfm-button--secondary {
+  background-color: var(--pfm-bg-tertiary);
+  color: var(--pfm-text-primary);
+  border-color: var(--pfm-border);
+}
+
+.pfm-button--secondary:hover:not(:disabled) {
+  background-color: var(--pfm-border);
+}
+
+.pfm-button--ghost {
+  background-color: transparent;
+  color: var(--pfm-text-primary);
+}
+
+.pfm-button--ghost:hover:not(:disabled) {
+  background-color: var(--pfm-bg-tertiary);
+}
+
+.pfm-button--danger {
+  background-color: var(--pfm-danger);
+  color: white;
+  border-color: var(--pfm-danger);
+}
+
+.pfm-button--danger:hover:not(:disabled) {
+  opacity: 0.9;
+}

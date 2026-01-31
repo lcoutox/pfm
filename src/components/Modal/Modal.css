@@ -1,0 +1,55 @@
+.pfm-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.pfm-modal {
+  background-color: var(--pfm-bg-secondary);
+  border: 1px solid var(--pfm-border);
+  border-radius: var(--pfm-radius);
+  box-shadow: var(--pfm-shadow);
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.pfm-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--pfm-border);
+}
+
+.pfm-modal__title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.pfm-modal__close {
+  background: none;
+  border: none;
+  color: var(--pfm-text-secondary);
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: 0.25rem;
+  border-radius: var(--pfm-radius);
+}
+
+.pfm-modal__close:hover {
+  color: var(--pfm-text-primary);
+  background-color: var(--pfm-bg-tertiary);
+}
+
+.pfm-modal__body {
+  padding: 1rem;
+  overflow-y: auto;
+}

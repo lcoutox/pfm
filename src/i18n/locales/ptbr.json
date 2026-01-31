@@ -1,0 +1,37 @@
+{
+  "sidebar": {
+    "brand": "PFM",
+    "dashboard": "Dashboard",
+    "squad": "Squad",
+    "market": "Market",
+    "finances": "Finances",
+    "nextMatch": "Próximo Jogo",
+    "dateLabel": "Data",
+    "balanceLabel": "Saldo"
+  },
+  "pages": {
+    "dashboard": {
+      "title": "Dashboard",
+      "placeholder": "Visão geral do clube. Conteúdo em breve."
+    },
+    "squad": {
+      "title": "Squad",
+      "placeholder": "Elenco e táticas. Conteúdo em breve."
+    },
+    "market": {
+      "title": "Market",
+      "placeholder": "Mercado de transferências. Conteúdo em breve."
+    },
+    "finances": {
+      "title": "Finances",
+      "placeholder": "Finanças do clube. Conteúdo em breve."
+    },
+    "nextMatch": {
+      "title": "Próximo Jogo",
+      "placeholder": "Próximo jogo. Conteúdo em breve."
+    }
+  },
+  "footer": {
+    "versionLabel": "Versão"
+  }
+}

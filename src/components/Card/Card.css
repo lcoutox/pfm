@@ -1,0 +1,20 @@
+.pfm-card {
+  background-color: var(--pfm-bg-secondary);
+  border: 1px solid var(--pfm-border);
+  border-radius: var(--pfm-radius);
+  box-shadow: var(--pfm-shadow);
+  overflow: hidden;
+}
+
+.pfm-card__title {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--pfm-text-primary);
+  border-bottom: 1px solid var(--pfm-border);
+}
+
+.pfm-card__body {
+  padding: 1rem;
+}
