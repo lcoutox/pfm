@@ -1,4 +1,14 @@
 {
+  "common": {
+    "comingSoon": "Coming soon.",
+    "backToMenu": "Back to menu"
+  },
+  "menu": {
+    "newGame": "New Game",
+    "loadGame": "Load Game",
+    "editor": "Editor",
+    "exit": "Exit"
+  },
   "sidebar": {
     "brand": "PFM",
     "dashboard": "Dashboard",

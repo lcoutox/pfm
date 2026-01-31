@@ -9,4 +9,7 @@
 //   return invoke<T>(command, args);
 // }
 
-export {};
+export async function exitApp(): Promise<void> {
+  const { exit } = await import("@tauri-apps/plugin-process");
+  await exit(0);
+}

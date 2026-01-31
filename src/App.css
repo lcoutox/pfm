@@ -1,0 +1,39 @@
+/* Base styles for PFM app shell */
+
+.app-root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.pfm-placeholder-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: var(--pfm-bg-primary);
+}
+
+.pfm-placeholder-screen__text {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  color: var(--pfm-text-secondary);
+}
+
+.pfm-placeholder-screen__back {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--pfm-accent);
+  background: transparent;
+  border: 1px solid var(--pfm-border);
+  border-radius: var(--pfm-radius);
+  cursor: pointer;
+}
+
+.pfm-placeholder-screen__back:hover {
+  background-color: var(--pfm-bg-tertiary);
+  border-color: var(--pfm-accent);
+}

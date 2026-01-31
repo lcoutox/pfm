@@ -6,12 +6,13 @@ import {
   useState,
   type ReactNode,
 } from "react";
-import type { ActiveMenuId } from "../types";
+import type { ActiveMenuId, CurrentScreen } from "../types";
 
 type GameState = {
   currentDate: string;
   balance: number;
   activeMenu: ActiveMenuId;
+  currentScreen: CurrentScreen;
 };
 
 type GameContextValue = {
@@ -19,12 +20,14 @@ type GameContextValue = {
   setCurrentDate: (date: string) => void;
   setBalance: (amount: number) => void;
   setActiveMenu: (menuId: ActiveMenuId) => void;
+  setCurrentScreen: (screen: CurrentScreen) => void;
 };
 
 const initialState: GameState = {
   currentDate: new Date().toISOString().slice(0, 10),
   balance: 0,
   activeMenu: "dashboard",
+  currentScreen: "MAIN_MENU",
 };
 
 const GameContext = createContext<GameContextValue | null>(null);
@@ -48,14 +51,19 @@ export function GameProvider({ children }: GameProviderProps) {
     setState((prev) => ({ ...prev, activeMenu: menuId }));
   }, []);
 
+  const setCurrentScreen = useCallback((screen: CurrentScreen) => {
+    setState((prev) => ({ ...prev, currentScreen: screen }));
+  }, []);
+
   const value = useMemo<GameContextValue>(
     () => ({
       state,
       setCurrentDate,
       setBalance,
       setActiveMenu,
+      setCurrentScreen,
     }),
-    [state, setCurrentDate, setBalance, setActiveMenu],
+    [state, setCurrentDate, setBalance, setActiveMenu, setCurrentScreen],
   );
 
   return <GameContext.Provider value={value}>{children}</GameContext.Provider>;

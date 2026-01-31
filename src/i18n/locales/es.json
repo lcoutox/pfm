@@ -1,4 +1,14 @@
 {
+  "common": {
+    "comingSoon": "Próximamente.",
+    "backToMenu": "Volver al menú"
+  },
+  "menu": {
+    "newGame": "Nueva Partida",
+    "loadGame": "Cargar",
+    "editor": "Editor",
+    "exit": "Salir"
+  },
   "sidebar": {
     "brand": "PFM",
     "dashboard": "Panel",

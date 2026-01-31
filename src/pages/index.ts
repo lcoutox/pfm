@@ -1,3 +1,4 @@
+export { MainMenu } from "./MainMenu";
 export { Dashboard } from "./Dashboard";
 export { Squad } from "./Squad";
 export { Market } from "./Market";

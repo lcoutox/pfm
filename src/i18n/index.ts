@@ -5,11 +5,12 @@ import en from "./locales/en.json";
 import es from "./locales/es.json";
 
 export const DEFAULT_LANGUAGE = "ptbr" as const;
-export const SUPPORTED_LANGUAGES = ["ptbr", "en", "es"] as const;
+export const SUPPORTED_LANGUAGES = ["ptbr", "pt", "en", "es"] as const;
 export type SupportedLanguage = (typeof SUPPORTED_LANGUAGES)[number];
 
 const resources = {
   ptbr: { translation: ptbr },
+  pt: { translation: ptbr },
   en: { translation: en },
   es: { translation: es },
 };

@@ -9,3 +9,10 @@ export type ActiveMenuId =
   | "market"
   | "finances"
   | "next-match";
+
+export type CurrentScreen =
+  | "MAIN_MENU"
+  | "NEW_GAME"
+  | "LOAD_GAME"
+  | "EDITOR"
+  | "DASHBOARD";
